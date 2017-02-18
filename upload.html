@@ -4,38 +4,93 @@
 	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 
 	<style>
-	body {
+	  body {
+  		background-color: powderblue;
   		font-family: 'Quicksand', sans-serif;
   		text-shadow: 0.2px 0.2px 0.2px #aaa;
-	}
+      font-size: 20;
+      
+	  }
+
+	  #navbar {
+    	list-style-type: none;
+    	margin: 0;
+    	padding: 0;
+    	overflow: hidden;
+    	background-color: powderblue;
+    	font-weight: bold;
+  	}
+
+  	#navbar li{
+      display: inline;
+      float: left;
+    }
+
+	  li a {
+    	display: block;
+      padding: 10px 100px;
+    	text-align: center;
+    	text-decoration: none;
+      color: #000000;
+	  }
+
+	  li a:hover {
+      border-bottom:3px solid #fff;
+	  }
+
+    h1 {
+      font-weight: bold;
+    }
+
+    
+
 	</style>
 	
-	<title> Upload your Dog to find potential matches! </title>
+	<title> Find matches for your dog! </title>
 </head>
 
 <body align="center">
-	<h1 align="center"> Enter your dog's information to find potential matches! </h1>
+  <br>
+	<h1> ADOPT DON'T SHOP </h1>
+	  <ul id="navbar">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="index.html">QUIZ</a></li>
+      <li><a href="index.html">MATCH</a></li>
+      <li><a href="index.html">ABOUT</a></li>     
+    </ul>
+	
+  <br><br>  
+	<h2 align="center"> Enter your dog's information to find potential matches! </h2>
+  <div id="form">
+	  <form action="/action_page.php">
+		  <div id="photo_upload">
+        Upload photo: 
+		    <input type='file' />
+			   <img id="myImg" src="#" alt="your image" />
+		    <br> <br>
+      </div>
 
-	<form action="/action_page.php">
-		Upload photo: <br>
-		<input type='file' />
-			<img id="myImg" src="#" alt="your image" />
-		<br> <br>
+      <div id="dog_name"> 
+  		  Name:<br>
+  		  <textarea rows="1" cols="80" id="name"> </textarea>
+  		  <br> <br>
+      </div>
+      
+      <div id="dog_type">  
+  		  Type:<br>
+  		  <textarea rows="1" cols="80" id="type"> </textarea>
+  		  <br> <br>
+      </div>
 
-  		Name:
-  		<textarea rows="1" cols="80" id="name"> </textarea>
-  		<br> <br>
-
-  		Type:
-  		<textarea rows="1" cols="80" id="type"> </textarea>
-  		<br> <br>
-
-  		Story: 
-  		<textarea rows="15" cols="80" id="story"> </textarea>
-  		<br> <br>
+      <div id="story">
+  		  Story:<br> 
+  		  <textarea rows="15" cols="80" id="story"> </textarea>
+  		  <br> <br>
+      </div>
 
   		<input type="submit" value="Submit" onclick="METHODCALL">
-	</form>
-
+      <br> <br>
+	  </form>
+  </div>
 </body>
 </html>
