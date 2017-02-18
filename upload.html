@@ -1,0 +1,41 @@
+
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+	<style>
+	body {
+  		font-family: 'Quicksand', sans-serif;
+  		text-shadow: 0.2px 0.2px 0.2px #aaa;
+	}
+	</style>
+	
+	<title> Upload your Dog to find potential matches! </title>
+</head>
+
+<body align="center">
+	<h1 align="center"> Enter your dog's information to find potential matches! </h1>
+
+	<form action="/action_page.php">
+		Upload photo: <br>
+		<input type='file' />
+			<img id="myImg" src="#" alt="your image" />
+		<br> <br>
+
+  		Name:
+  		<textarea rows="1" cols="80" id="name"> </textarea>
+  		<br> <br>
+
+  		Type:
+  		<textarea rows="1" cols="80" id="type"> </textarea>
+  		<br> <br>
+
+  		Story: 
+  		<textarea rows="15" cols="80" id="story"> </textarea>
+  		<br> <br>
+
+  		<input type="submit" value="Submit" onclick="METHODCALL">
+	</form>
+
+</body>
+</html>
