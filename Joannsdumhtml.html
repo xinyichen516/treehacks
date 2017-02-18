@@ -2,87 +2,76 @@
 <html>
   <head>
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-  <!--Set background color and font color  -->
-  <style>
-  body {
-    background-color: powderblue;
-    font-family: 'Quicksand', sans-serif;
-    text-shadow: 0.2px 0.2px 0.2px #aaa;
-  }
-
-  p {
-    color: black;
-  }
-
   
-  /*Make headers centered*/
-  h1 {
-    text-align: center;
-  }
+  <style>
+    #navbar {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: powderblue;
+      white-space:nowrap;
+      font-weight: bold;
+    }
 
-  #navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    white-space:nowrap;
-  }
-
-  #navbar li{
+    #navbar li{
       display: inline;
       float: left;
     }
 
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 10px 100px;
+      text-decoration: none;
+      color: #000000;
+    }
 
+    li a:hover {
+      border-bottom:3px solid #fff;
+    }  
 
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
+    h1 {
+      text-align: center;
+      font-weight: bold;
+    }
+ 
+    body {
+      background-color: powderblue;
+      font-family: 'Quicksand', sans-serif;
+      text-shadow: 0.2px 0.2px 0.2px #aaa;
+      text-align: center;
+      font-size: 20px;
+      color: black;
+    }
 
-li a:hover {
-    background-color: #111;
-}    
-h3 {
-    text-align: center;
-}
-h4 {
-    text-align: center;
-}
-u2 {
-    text-align: center;
-}
-u3 {
-    text-align: center;
-}
+    p {
+      color: black;
+    } 
 
-#three_puppies div {
-  display: inline-block;
-  margin: 10px;
-}
+    #three_puppies div {
+      display: inline-block;
+      margin: 10px;
+    }
   </style>
   </head>
 
 
   <body>
-<!--Make a header  -->
-  <h1>Adopt Don't Shop</h1>
+  <br>
+    <h1>ADOPT DON'T SHOP</h1>
   
     <ul id="navbar">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html">Quiz</a></li>
-        <li><a href="index.html">Match</a></li>
-        <li><a href="index.html">About</a></li>
-      
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="index.html">QUIZ</a></li>
+      <li><a href="index.html">MATCH</a></li>
+      <li><a href="index.html">ABOUT</a></li>  
     </ul>
 
-  <!--Make a list of Pets needing Adoption  -->
-  <h3>Your Top Matches</h3>
-  <div id="three_puppies" style="text-align: center">
+    <!--Make a list of Pets needing Adoption  -->
+    <h3>Your Top Matches</h3>
+      <div id="three_puppies" style="text-align: center">
     <div id="puppy1"> 
       <img src="IMG_1821.jpg" alt="Puppy 1" style="width:304px;height:228px;">
     </div>
@@ -92,14 +81,14 @@ u3 {
     <div id="puppy3"> 
       <img src="IMG_1918.jpg" alt="Puppy 1" style="width:304px;height:228px;">
     </div>
-  </div>
+      </div>
 
-<!--Make a list of Friendly Fosters  -->
-  <h4> Friendly Fosters haha </h4>
-  <u3>
-    <li>Person 1</li>
-    <li>Person 2</li>
-    <li>Person 3</li>
-  </u3>
+    <!--Make a list of Friendly Fosters  -->
+    <h4> Friendly Fosters haha </h4>
+    <u3>
+      <li>Person 1</li>
+      <li>Person 2</li>
+      <li>Person 3</li>
+    </u3>
 
 </html>
