@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adopt Don't Shop</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+</head>
+<body>
+	<div class="question">Did You Know?</div>
+	<br>
+	<div class="answer">Every year, 7.6 million animals enter shelters nationwide.</div>
+	<br>
+	<div class="question">Have You Heard?</div>
+	<br>
+	<div class="answer">Approximately 2.7 million animals are euthanized annually.</div>
+	<br>
+	<div class="question">Are You Aware?</div>
+	<br>
+	<div class="answer">You can change this. <br>
+		<button type="button" id="joinButton">Show Me How <img src="assets/img/buttonarrow.png"> </button>
+	<br>
+	<script src="assets/js/scrollReveal.min.js"></script>
+	<script> 
+		var config = {
+			easing: 'ease-in-out', 
+			wait: '5s', 
+			vF: 1.0, 
+			duration: '1000',
+			reset: true,
+		}
+		window.sr = ScrollReveal(config);
+		sr.reveal('.question');
+		sr.reveal('.answer');
+		sr.reveal('#joinButton');
+	</script>
+</body>
+</html>
