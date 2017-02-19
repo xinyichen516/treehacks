@@ -2,6 +2,7 @@
 <html>
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <script type="text/javascript" src="/formInput.js"></script>
 
 	<style>
 	  body {
@@ -28,7 +29,7 @@
 
 	  li a {
     	display: block;
-      padding: 10px 100px;
+      padding: 10px 90px;
     	text-align: center;
     	text-decoration: none;
       color: #000000;
@@ -46,7 +47,7 @@
 
 	</style>
 	
-	<title> Find matches for your dog! </title>
+	<title> Find matches for your pet! </title>
 </head>
 
 <body align="center">
@@ -54,43 +55,43 @@
 	<h1> ADOPT DON'T SHOP </h1>
 	  <ul id="navbar">
       <li><a href="index.html">HOME</a></li>
-      <li><a href="index.html">QUIZ</a></li>
-      <li><a href="index.html">MATCH</a></li>
+      <li><a href="upload.html">FIND PARENTS</a></li>
+      <li><a href="index.html">FIND PETS</a></li>
       <li><a href="index.html">ABOUT</a></li>     
     </ul>
 	
   <br><br>  
-	<h2 align="center"> Enter your dog's information to find potential matches! </h2>
-  <div id="form">
+	<h2 align="center"> Enter your pet's information to find potential new <br>
+                      parents to foster your pet! </h2>
 	  <form action="/action_page.php">
 		  <div id="photo_upload">
         Upload photo: 
 		    <input type='file' />
-			   <img id="myImg" src="#" alt="your image" />
+          <img id="myImg"/>
+
 		    <br> <br>
       </div>
 
-      <div id="dog_name"> 
+      <div id="pet_name"> 
   		  Name:<br>
   		  <textarea rows="1" cols="80" id="name"> </textarea>
   		  <br> <br>
       </div>
       
-      <div id="dog_type">  
+      <div id="pet_type">  
   		  Type:<br>
   		  <textarea rows="1" cols="80" id="type"> </textarea>
   		  <br> <br>
       </div>
 
-      <div id="story">
+      <div id="pet_story">
   		  Story:<br> 
   		  <textarea rows="15" cols="80" id="story"> </textarea>
   		  <br> <br>
       </div>
 
-  		<input type="submit" value="Submit" onclick="METHODCALL">
+  		<input type="submit" value="Submit" onclick="submitData()">
       <br> <br>
 	  </form>
-  </div>
 </body>
 </html>
