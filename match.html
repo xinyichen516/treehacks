@@ -23,11 +23,7 @@
       display: block;
       color: white;
       text-align: center;
-<<<<<<< HEAD
-      padding: 10px 100px;
-=======
       padding: 10px 85px;
->>>>>>> 3ec0e7ee34a008293c9360f76e8c67aa231e4939
       text-decoration: none;
       color: #000000;
     }
@@ -50,54 +46,47 @@
       color: black;
     }
 
-    p {
-      color: black;
-    } 
-
-    #three_puppies div {
-      display: inline-block;
-      margin: 10px;
-    }
   </style>
   </head>
 
 
   <body>
-  <br>
+    <br>
     <h1>ADOPT DON'T SHOP</h1>
   
     <ul id="navbar">
       <li><a href="index.html">HOME</a></li>
-<<<<<<< HEAD
-      <li><a href="index.html">QUIZ</a></li>
-      <li><a href="index.html">MATCH</a></li>
-=======
       <li><a href="upload.html">FIND PARENTS</a></li>
-      <li><a href="index.html">FIND PETS</a></li>
->>>>>>> 3ec0e7ee34a008293c9360f76e8c67aa231e4939
+      <li><a href="match.html">FIND PETS</a></li>
       <li><a href="index.html">ABOUT</a></li>  
     </ul>
 
-    <!--Make a list of Pets needing Adoption  -->
-    <h3>Your Top Matches</h3>
-      <div id="three_puppies" style="text-align: center">
-    <div id="puppy1"> 
-      <img src="IMG_1821.jpg" alt="Puppy 1" style="width:304px;height:228px;">
-    </div>
-    <div id="puppy2"> 
-      <img src="IMG_1870.jpg" alt="Puppy 1" style="width:304px;height:228px;">
-    </div>
-    <div id="puppy3"> 
-      <img src="IMG_1918.jpg" alt="Puppy 1" style="width:304px;height:228px;">
-    </div>
+    <h2> FIND PETS </h2>
+
+    <form action="/action_page.php">
+      <div id="pet_name"> 
+        Name:<br>
+        <textarea rows="1" cols="80" id="name"> </textarea>
+        <br> <br>
+      </div>
+      
+      <div id="pet_type">  
+        Type:<br>
+        <textarea rows="1" cols="80" id="type"> </textarea>
+        <br> <br>
       </div>
 
-    <!--Make a list of Friendly Fosters  -->
-    <h4> Friendly Fosters haha </h4>
-    <u3>
-      <li>Person 1</li>
-      <li>Person 2</li>
-      <li>Person 3</li>
-    </u3>
+      <div id="pet_story">
+        Story:<br> 
+        <textarea rows="15" cols="80" id="story"> </textarea>
+        <br> <br>
+      </div>
+
+      <input type="submit" value="Submit" onclick="submitData()">
+      <br> <br>
+    </form>
+
+
+    
 
 </html>
