@@ -2,7 +2,7 @@
 <html>
   <head>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-  
+
   <style>
     #navbar {
       list-style-type: none;
@@ -30,13 +30,17 @@
 
     li a:hover {
       border-bottom:3px solid #fff;
-    }  
+    }
 
     h1 {
       text-align: center;
       font-weight: bold;
-    }
- 
+        margin-left: 2cm;
+        margin-right: 2cm;
+        margin-bottom: 2cm;
+        font-size: 300%;
+      }
+
     body {
       background-color: powderblue;
       font-family: 'Roboto Condensed', sans-serif;
@@ -53,43 +57,43 @@
   <body>
     <br>
     <h1>ADOPT DON'T SHOP</h1>
-  
+
     <ul id="navbar">
       <li><a href="index.html">HOME</a></li>
       <li><a href="upload.html">FIND PARENTS</a></li>
       <li><a href="match.html">FIND PETS</a></li>
-      <li><a href="index.html">ABOUT</a></li>  
+      <li><a href="index.html">ABOUT</a></li>
     </ul>
 
     <h2> FIND PETS </h2>
 
     <form>
-        Enter your zip code so we can find pets near you:<br> 
+        Enter your zip code so we can find pets near you:<br>
         <textarea rows="1" cols="25" id="location"> </textarea>
         <br> <br>
 
         What type of pet are you looking for?<br>
-        <div name="pref_type1"> 
+        <div name="pref_type1">
           <input type="radio" name="type" value="barnyard"> barnyard <br>
           <input type="radio" name="type" value="bird"> bird <br>
           <input type="radio" name="type" value="cat"> cat <br>
           <input type="radio" name="type" value="dog"> dog <br>
         </div>
 
-        <div name="pref_type2"> 
+        <div name="pref_type2">
           <input type="radio" name="type" value="horse"> horse <br>
           <input type="radio" name="type" value="pig"> pig <br>
           <input type="radio" name="type" value="reptile"> reptile <br>
           <input type="radio" name="type" value="smallfurry"> smallfurry <br><br>
         </div>
-   
+
         What breed do you prefer?<br>
         <textarea rows="1" cols="50" id="breed"> </textarea>
         <br> <br>
 
         What gender do you prefer?<br>
-        <input type="radio" name="gender" value="female"> female 
-        <input type="radio" name="gender" value="male"> male 
+        <input type="radio" name="gender" value="female"> female
+        <input type="radio" name="gender" value="male"> male
         <input type="radio" name="gender" value="none"> no preference <br><br>
 
         What size pet do you prefer?<br>
@@ -98,7 +102,7 @@
         <input type="radio" name="size" value="large"> large
         <input type="radio" name="size" value="none"> no preference <br><br>
 
-        How long can you keep the foster pet?<br> 
+        How long can you keep the foster pet?<br>
         <input type="radio" name="duration" value="one_week"> less than 1 week <br>
         <input type="radio" name="duration" value="2_week"> 1- 2 weeks <br>
         <input type="radio" name="duration" value="one_month"> 2- 4 weeks <br>
@@ -115,6 +119,6 @@
     </form>
 
 
-    
+
 
 </html>

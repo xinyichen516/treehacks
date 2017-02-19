@@ -10,7 +10,7 @@
   		font-family: 'Roboto Condensed', sans-serif;
   		text-shadow: 0.2px 0.2px 0.2px #aaa;
       font-size: 20;
-      
+
 	  }
 
 	  #navbar {
@@ -42,41 +42,49 @@
     h1 {
       font-weight: bold;
     }
-
+		h1 {
+			text-align: center;
+			font-weight: bold;
+			margin-left: 2cm;
+			margin-right: 2cm;
+			margin-bottom: 2cm;
+			font-size: 300%;
+		}
 	</style>
-	
+
 	<title> Find matches for your pet! </title>
 </head>
 
 <body align="center">
   <br>
 	<h1> ADOPT DON'T SHOP </h1>
+
 	  <ul id="navbar">
       <li><a href="index.html">HOME</a></li>
       <li><a href="upload.html">FIND PARENTS</a></li>
       <li><a href="match.html">FIND PETS</a></li>
-      <li><a href="about.html">ABOUT</a></li>     
+      <li><a href="about.html">ABOUT</a></li>
     </ul>
-	
-  <br><br>  
+
+  <br><br>
 	<h2 align="center"> Enter your pet's information to find potential new <br>
                       parents to foster your pet! </h2>
 	  <form>
 		  <div id="photo_upload">
-        Upload photo: 
+        Upload photo:
 		    <input type='file' />
           <img id="myImg"/>
 		    <br> <br>
       </div>
- 
+
   		  Name:<br>
   		  <textarea rows="1" cols="50" id="name"> </textarea>
   		  <br> <br>
-       
+
   		  Breed:<br>
   		  <textarea rows="1" cols="50" id="type"> </textarea>
   		  <br> <br>
- 
+
         Age:<br>
         <textarea rows="1" cols="20" id="type"> </textarea>
         <br> <br>
@@ -85,7 +93,7 @@
         <input type="radio" name="gender" value="female"> female
         <input type="radio" name="gender" value="male"> male <br><br>
 
-        Size: 
+        Size:
         <input type="radio" name="size" value="small"> small
         <input type="radio" name="size" value="medium"> medium
         <input type="radio" name="size" value="large"> large <br><br>
@@ -104,7 +112,7 @@
         <input type="radio" name="sheds" value="no"> no <br><br>
 
   		  Tell us more about your pet! Where did he/ she live before? What does he/ <br>
-        she like? Is there a message that you would like to pass on to the next parents?<br> 
+        she like? Is there a message that you would like to pass on to the next parents?<br>
   		  <textarea rows="15" cols="80" id="story"> </textarea>
   		  <br> <br>
 
