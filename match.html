@@ -64,21 +64,51 @@
     <h2> FIND PETS </h2>
 
     <form>
-        What is your zip code, so we can find pets near you?<br> 
-        <textarea rows="1" cols="80" id="location"> </textarea>
+        Enter your zip code so we can find pets near you:<br> 
+        <textarea rows="1" cols="25" id="location"> </textarea>
         <br> <br>
 
         What type of pet are you looking for?<br>
-        <textarea rows="1" cols="80" id="animal"> </textarea>
-        <br> <br>
+        <div name="pref_type1"> 
+          <input type="radio" name="type" value="barnyard"> barnyard <br>
+          <input type="radio" name="type" value="bird"> bird <br>
+          <input type="radio" name="type" value="cat"> cat <br>
+          <input type="radio" name="type" value="dog"> dog <br>
+        </div>
+
+        <div name="pref_type2"> 
+          <input type="radio" name="type" value="horse"> horse <br>
+          <input type="radio" name="type" value="pig"> pig <br>
+          <input type="radio" name="type" value="reptile"> reptile <br>
+          <input type="radio" name="type" value="smallfurry"> smallfurry <br><br>
+        </div>
    
         What breed do you prefer?<br>
-        <textarea rows="1" cols="80" id="breed"> </textarea>
+        <textarea rows="1" cols="50" id="breed"> </textarea>
         <br> <br>
 
+        What gender do you prefer?<br>
+        <input type="radio" name="gender" value="female"> female 
+        <input type="radio" name="gender" value="male"> male 
+        <input type="radio" name="gender" value="none"> no preference <br><br>
+
+        What size pet do you prefer?<br>
+        <input type="radio" name="size" value="small"> small
+        <input type="radio" name="size" value="medium"> medium
+        <input type="radio" name="size" value="large"> large
+        <input type="radio" name="size" value="none"> no preference <br><br>
+
         How long can you keep the foster pet?<br> 
-        <textarea rows="1" cols="80" id="duration"> </textarea>
+        <input type="radio" name="duration" value="one_week"> less than 1 week <br>
+        <input type="radio" name="duration" value="2_week"> 1- 2 weeks <br>
+        <input type="radio" name="duration" value="one_month"> 2- 4 weeks <br>
+        <input type="radio" name="duration" value="other_len"> more than 1 month <br>
         <br> <br>
+
+        Anything else that you want us to take into consideration?<br>
+        <textarea rows="10" cols="60" id="comments"> </textarea>
+        <br> <br>
+
 
       <input type="submit" value="Submit">
       <br> <br>
